@@ -1,0 +1,115 @@
+* {
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-size: 14px;
+    min-height: 0;
+}
+
+#workspaces {
+    background: #24283b;
+    border-radius: 5px;
+    border: 2px solid #7aa2f7;
+    margin: 4px 0px 6px 0px; /* Más margen arriba y abajo */
+}
+
+#workspaces button {
+    background: transparent;
+    color: #7aa2f7;
+    border: none;
+    margin: 4px 6px; /* Más margen arriba y abajo */
+    padding: 0px 5px 0px 4px; /* Espaciado interno */
+}
+
+#workspaces button.active {
+    background: transparent;
+    color: #7aa2f7;
+    border: 2px solid #7aa2f7; /* Borde del aro */
+    border-radius: 50%; /* Mantiene el aro redondo */
+    padding: 0px 5px 0px 4px; /* Espaciado interno */
+    margin: 4px 6px; /* Más margen arriba y abajo */
+}
+
+#workspaces button.urgent {
+    background: #f7768e;
+    color: #1a1b26;
+}
+
+#workspaces button:hover {
+    background: transparent;
+    color: #7dcfff;
+    box-shadow: 0px 0px 5px #7dcfff; /* Efecto de luz sin borde */
+    border-radius: 50%;
+    margin: 4px 6px; /* Más margen arriba y abajo */
+    padding: 0px 5px 0px 4px; /* Espaciado interno */
+}
+
+#clock, #battery, #network, #pulseaudio, #backlight,
+#cpu, #memory, #temperature, #keyboard-state, 
+#custom-notification, #custom-atajos,
+#hyprland-language, #power-profiles-daemon, #idle_inhibitor {
+    padding: 5px 4px;
+    margin: 3px;
+    border-radius: 5px;
+    /*background: #24283b;*/
+    color: #c0caf5;
+}
+
+#custom-launch_apps {
+    padding: 2px 2px 2px 2px;
+    margin: 8px 0px 10px 2px;
+    border-radius: 10px;
+    background: #24283b;
+    color: #c0caf5;
+}
+
+#battery.warning {
+    background: #e0af68;
+    color: #1a1b26;
+}
+
+#battery.critical {
+    background: #f7768e;
+    color: #1a1b26;
+}
+
+#temperature.critical {
+    background: #f7768e;
+    color: #1a1b26;
+}
+
+#custom-media {
+    background: #bb9af7;
+    color: #1a1b26;
+}
+
+#custom-power_menu {
+    background: #ff9e64;
+    color: #1a1b26;
+    padding: 0px 15px 0px 12px; /* Espaciado interno */
+    border-radius: 5px;
+    margin: 2px 0px 4px 0px; /* Más margen arriba y abajo */
+}
+
+#tray {
+    background: #1a1b26;
+    border-radius: 5px;
+    margin: 2px 0px 4px 0px; /* Más margen arriba y abajo */
+}
+
+#tray > * {
+    background: #24283b;
+    color: #c0caf5;
+    border-radius: 5px;
+}
+
+window#waybar {
+    background: #1a1b26;
+    border-bottom: 2px solid #7aa2f7;
+    color: #a9b1d6;
+}
+
+tooltip {
+    background: #1a1b26;
+    border: 1px solid #7aa2f7;
+    color: #a9b1d6;
+}
+

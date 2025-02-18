@@ -1,0 +1,74 @@
+/*
+ * Rofi Theme - Adaptado para Hyprland y TokyoNight
+ */
+
+/*****----- Configuración -----*****/
+configuration {
+    show-icons: false;
+}
+
+/*****----- Importar Colores y Fuentes -----*****/
+* {
+    font: "JetBrainsMono Nerd Font 12";
+    background: rgba(26, 27, 38, 1);
+    background-alt: rgba(30, 32, 48, 0.9);
+    foreground: #c0caf5;
+    selected: #7aa2f7;
+    urgent: #f7768e;
+    active: #bb9af7;
+    border-color: #565f89;
+    padding: 10px;
+}
+
+/*****----- Ventana Principal -----*****/
+window {
+    location: northwest;
+    anchor: northwest;
+    x-offset: 0px;
+    y-offset: 0px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: @background;
+    transparency: "real";
+}
+
+/*****----- Contenedor Principal -----*****/
+mainbox {
+    background-color: transparent;
+    spacing: 10px;
+    padding: 5px;
+    children: ["listview"];
+}
+
+/*****----- Lista de Elementos -----*****/
+listview {
+    lines: 6;
+    columns: 1;
+    cycle: true;
+    dynamic: true;
+    scrollbar: false;
+    spacing: 5px;
+    background-color: transparent;
+}
+
+/*****----- Elementos -----*****/
+element {
+    background-color: @background-alt;
+    text-color: @foreground;
+    border-radius: 8px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+element selected.normal {
+    background-color: @selected;
+    text-color: @background;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+    horizontal-align: 0.5;
+    vertical-align: 0.5;
+}
+
